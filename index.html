@@ -1,0 +1,45 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Java Script Code Quiz</title>
+</head>
+<body>
+    <p class="time"></p>
+    <div class="container">
+        <div class="homePage">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that the incorrect answers will penalize your score/time by 10 seconds.</p>
+        </div>
+        <div class="scorePage">
+            <h1>All Done!</h1>
+            <p class="finalScore"></p>
+            Enter Initials:<input type="text" name="Enter Initials" id="initials">
+            <button class="center" id="submit">Submit</button>
+        </div>
+        <div class="highscorePage">
+            <form id="score-form" method="POST">
+                <h1>High Scores</h1>
+                <ol id="scoreList"></ol>
+            </form>
+            <div class="left">
+                <button id="goBack">Go Back</button>
+            </div>
+            <div class="right">
+                <button id="clear">Clear Highscores</button>
+            </div>
+        </div>
+            <div class="center">
+                <button id="start">Start Quiz</button>
+            </div>
+            <main class="questions-rendered"></main>
+            <div id="returnFeedback"></div>
+    </div>
+    <script src=script.js></script>
+</body>
+</html>
